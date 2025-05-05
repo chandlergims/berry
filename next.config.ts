@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: false,
-  output: 'export',  // Enable static exports
+  // output: 'export',  // Removed to enable normal Next.js app functionality
   typescript: {
     // !! WARN !!
     // Ignoring type checking to make builds easier
@@ -10,10 +10,6 @@ const nextConfig = {
   eslint: {
     // Ignoring ESLint errors during build
     ignoreDuringBuilds: true,
-  },
-  // Disable image optimization since it's not compatible with static exports
-  images: {
-    unoptimized: true,
   },
 };
 
